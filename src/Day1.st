@@ -1,4 +1,4 @@
-CLASS Day1 EXTENDS DayAbstract MODULE AocApp CLASSVARS '' VARS 'result time'
+CLASS Day1 EXTENDS DayAbstract MODULE AocApp CLASSVARS '' VARS ''
 
 title
 	^ 'Day 1: Historian Hysteria'.

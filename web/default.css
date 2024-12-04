@@ -1,7 +1,7 @@
 ﻿body {
-    font-family: system-ui;
-    font-size: medium;
-    background-color: #F0F0F0;
+	font-family: system-ui;
+	font-size: medium;
+	background-color: #F0F0F0;
 }
 
 #formTable {
@@ -41,7 +41,8 @@
 	border: 1px solid gray;
 }
 
-#daysTable th:nth-child(3) {
+#daysTable th:nth-child(3),
+#daysTable td:nth-child(3) {
 	text-align: right;
 }
 
