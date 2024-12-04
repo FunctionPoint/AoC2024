@@ -10,19 +10,18 @@ test: aAocApp
 		self testGui ].
 !
 testGui
-	"Check if days are loaded in days table."
-	self assert: [ aocApp daysTable rows length - 1 = aocApp days length ].
-
 	aocApp runAllButton click.
-	Timer timeout: 10000 then: [
+	Timer timeout: 3000 then: [
 		self checkResults.
 		aocApp stop ].
 !
 checkResults
-	"Check if all aoc results contain numbers."
+	"Check if all day solutions are loaded in days table."
+	self assert: [ aocApp daysTable rows length - 1 = aocApp days length ].
 
+	"Check if all aoc results contain numbers."
 	aocApp daysTable tBody rows do: [ :row |
-		self assert: [ ( row cells at: 1 ) textContent startsWith: 'Day' ].
-		self assert: [ ( row cells at: 2 ) textContent length > 0 ].
-		self assert: [ ( row cells at: 3 ) textContent toInteger >= 0 ] ].
+		self assert: [ ( row cells at: 0 ) textContent startsWith: 'Day' ].
+		self assert: [ ( row cells at: 1 ) textContent length > 0 ].
+		self assert: [ ( row cells at: 2 ) textContent toInteger >= 0 ] ].
 !

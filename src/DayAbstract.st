@@ -1,4 +1,4 @@
-CLASS DayAbstract EXTENDS Object MODULE AocApp CLASSVARS '' VARS 'result time'
+CLASS DayAbstract EXTENDS Object MODULE AocApp CLASSVARS '' VARS 'solution time'
 
 "Solving"
 
@@ -6,7 +6,7 @@ solveTimed
 	| start |
 
 	start := Date new toMilliseconds.
-	result := self solve.
+	solution := self solve.
 	time := Date new toMilliseconds - start.
 !
 title
@@ -18,8 +18,8 @@ solve
 
 "Accessing"
 
-result
-	^ result.
+solution
+	^ solution.
 !
 time
 	^ time.

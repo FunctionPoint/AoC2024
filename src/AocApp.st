@@ -40,7 +40,7 @@ setCursor: value
 !
 runAll2
 	days do: [ :day |
-		"Pause shortly between results to allow GUI updates."
+		"Pause shortly between solutions to allow GUI updates."
 		Timer timeout: 100 then: [
 			day solveTimed.
 			self addDay: day ] ].
@@ -50,7 +50,7 @@ addDay: day
 	row := daysTable tBody insertRow: -1.
 
 	( row insertCell ) textContent: day title.
-	( row insertCell ) textContent: day result.
+	( row insertCell ) textContent: day solution.
 	( row insertCell ) textContent: day time toString.
 
 	"Restrore cursor after last day."

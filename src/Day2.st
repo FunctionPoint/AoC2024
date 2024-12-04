@@ -4,6 +4,7 @@ CLASS Day2 EXTENDS DayAbstract MODULE AocApp CLASSVARS '' VARS ''
  A report is safe when:
 	- The levels are either all increasing or all decreasing.
 	- Any two adjacent levels differ by at least one and at most three."
+
 title
 	^ 'Day 2: Red-Nosed Reports'.
 !
@@ -13,19 +14,24 @@ solve
 	safeCount := 0.
 	self reports do: [ :report |
 		( self checkReport: report ) ifTrue: [
-			safeCount increment ] ].
+			safeCount := safeCount + 1 ] ].
 
 	^ safeCount.
 !
 checkReport: report
-	| isIncreasing distance |
-	isIncreasing := ( report at: 1 ) > ( report at: 2 ).
+	| previous increasing current distance |
+
+	previous := report first.
+	increasing := previous < ( report at: 1 ).
 
 	1 to: report length - 1 do: [ :index |
-		distance := ( report at: index ) - ( report at: index - 1 ).
-		( distance < 0 ) & isIncreasing ifTrue: [ ^ false ].
+		current := report at: index.
+		distance := current - previous.
+		increasing & ( distance < 0 ) ifTrue: [ ^ false ].
+		increasing not & ( distance > 0 ) ifTrue: [ ^ false ].
 		distance := distance abs.
-		( distance < 1 ) | ( distance > 3 ) ifTrue: [ ^ false ] ].
+		( distance < 1 ) | ( distance > 3 ) ifTrue: [ ^ false ].
+		previous := current ].
 
 	^ true.
 !

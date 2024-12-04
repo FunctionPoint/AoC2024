@@ -4,18 +4,14 @@ title
 	^ 'Day 1: Historian Hysteria'.
 !
 solve
-	| listLength list1Sorted list2Sorted distance |
+	| list1Sorted list2Sorted distance |
 
-	listLength := 1000.	"Hard coded"
 	list1Sorted := self list1 sort.
-	self assert: [ list1Sorted length = listLength ].
 	list2Sorted := self list2 sort.
-	self assert: [ list2Sorted length = listLength ].
 
 	distance := 0.
-	0 to: listLength - 1 do: [ :index |
+	0 to: list1Sorted length - 1 do: [ :index |
 		distance := distance + ( ( list1Sorted at: index ) - ( list2Sorted at: index ) ) abs ].
-
 	^ distance.
 !
 list1
