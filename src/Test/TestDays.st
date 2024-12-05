@@ -20,3 +20,11 @@ testDay2
 	self assert: [ day2 reports length = 1000 ].
 	self assert: [ day2 solution = 524 ].
 !
+testDay3
+	| day3 |
+	day3 := Day3 new solveTimed.
+
+	self assert: [ day3 title startsWith: 'Day' ].
+	self assert: [ day3 count = 701 ].
+	self assert: [ day3 solution = 184122457 ].
+!

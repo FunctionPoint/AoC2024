@@ -6,7 +6,7 @@ solveTimed
 	| start |
 
 	start := Date new toMilliseconds.
-	solution := self solve.
+	self solve.
 	time := Date new toMilliseconds - start.
 !
 title

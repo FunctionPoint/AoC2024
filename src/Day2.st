@@ -16,7 +16,7 @@ solve
 		( self checkReport: report ) ifTrue: [
 			safeCount := safeCount + 1 ] ].
 
-	^ safeCount.
+	solution := safeCount.
 !
 checkReport: report
 	| previous increasing current distance |

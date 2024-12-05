@@ -15,7 +15,7 @@ initializeDays
 !
 dayClasses
 	"Array day solution classes implemented."
-	^ #( Day1 Day2 ).
+	^ #( Day1 Day2 Day3 ).
 !
 bindElements
 	daysTable := Document getElementById: 'daysTable' class: HtmlTableElement.
