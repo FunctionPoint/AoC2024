@@ -19,20 +19,7 @@
 			"label": "Compile Smalltalk",
 			"type": "shell",
 			"command": "node",
-			"args": [  "../../Compiler/out/main.js", "-t", "../../Smalltalk/Core", "../../Smalltalk/Browser", "+t", "src", "web/Script" ],
-			"options": {
-				"cwd": "${workspaceFolder}"
-			},
-			"problemMatcher": []
-		},
-		{
-			"label": "Compile Smalltalk minimized",
-			"type": "shell",
-			"command": "node",
-			"args": [  "../../Compiler/out/main.js", "-m", "AocAppApp", "-t", "../../Smalltalk/Core", "../../Smalltalk/Browser", "+t", "src", "web/Script" ],
-			"options": {
-				"cwd": "${workspaceFolder}"
-			},
+			"args": [ "../../Compiler/out/main.js", "../../Smalltalk/Core", "../../Smalltalk/Node", "src", "out" ],
 			"problemMatcher": []
 		}
 	]

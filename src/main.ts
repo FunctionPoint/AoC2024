@@ -1,4 +1,4 @@
-// Invoke the start method on a new AocAppApp ST object.
+// Invoke the start method on a new AocApp ST object.
 
 let moduleName: string = "./AocApp.js";
 import( moduleName )

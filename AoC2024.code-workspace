@@ -4,7 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "../../Smalltalk"
+			"path": "../Smalltalk"
+		},
+		{
+			"path": "../Database"
+		},
+		{
+			"path": "../Documentation"
 		}
 	],
 	"settings": {}

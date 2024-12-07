@@ -1,2 +1,2 @@
-.env
-web/Script
+node_modules/
+out/

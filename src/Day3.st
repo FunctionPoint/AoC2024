@@ -5,6 +5,8 @@ CLASS Day3 EXTENDS DayAbstract MODULE AocApp CLASSVARS '' VARS 'memory position 
 Only the four highlighted sections are real mul instructions.
 Adding up the result of each instruction produces 161 (2*4 + 5*5 + 11*8 + 8*5)."
 
+"(Yes I know, RexExp would be easier, but I'm into writing compilers :)."
+
 title
 	^ 'Day 3: Mull It Over'.
 !

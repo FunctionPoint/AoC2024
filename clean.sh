@@ -4,6 +4,6 @@
 # Change to script folder.
 cd "$(dirname "$0")"
 
-echo "Cleaning: Example AocApp"
+echo "Cleaning: AocApp"
 
-rm -fr ./web/Script
+rm -fr ./out
