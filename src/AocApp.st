@@ -3,7 +3,7 @@ CLASS AocApp EXTENDS Object MODULE AocApp CLASSVARS '' VARS 'days'
 start
 	self initializeDays.
 
-	"^ self runDay: days last."
+	^ self runDay: days last.
 
 	"These test class references are needed to force importing their full unit test modules."
 	TestDays.
@@ -17,7 +17,7 @@ initializeDays
 !
 dayClasses
 	"Array day solution classes implemented."
-	^ #( Day1 Day2 Day3 Day4 ).
+	^ #( Day1 Day2 Day3 Day4 Day5 ).
 !
 runAll
 	days do: [ :day |
