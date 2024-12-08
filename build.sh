@@ -15,4 +15,4 @@ tsc
 # Compile Smalltalk
 ../../Compiler/start.sh ../../Smalltalk/Core ../../Smalltalk/Node src out
 
-./start.sh
+node out/main.js -test

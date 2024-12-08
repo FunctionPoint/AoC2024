@@ -35,3 +35,9 @@ testDay4
 	self assert: [ day4 title startsWith: 'Day' ].
 	self assert: [ day4 solution = 2483 ].
 !
+testDay5
+	self assert: [ Day5 new solveTimed solution = 6949 ].
+!
+testDay6
+	self assert: [ Day6 new solveTimed solution = 5131 ].
+!
