@@ -17,7 +17,7 @@ initializeDays
 !
 dayClasses
 	"Array day solution classes implemented."
-	^ #( Day1 Day2 Day3 ).
+	^ #( Day1 Day2 Day3 Day4 ).
 !
 runAll
 	days do: [ :day |
