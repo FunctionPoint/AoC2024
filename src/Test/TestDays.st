@@ -41,3 +41,6 @@ testDay5
 testDay6
 	self assert: [ Day6 new solveTimed solution = 5131 ].
 !
+testDay7
+	self assert: [ Day7 new solveTimed solution = 975671981569 ].
+!

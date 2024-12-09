@@ -46,7 +46,7 @@ checkPage: page with: prevPage
 middlePage: order
 	^ order at: order length // 2.
 !
-rulesExample
+exampleRules
 	^ #(
 		#( 47 53 )
 		#( 97 13 )
@@ -71,7 +71,7 @@ rulesExample
 		#( 53 13 )
 	).
 !
-updatesExample
+exampleUpdates
 	^ #(
 		#( 75 47 61 53 29 )
 		#( 97 61 53 29 13 )

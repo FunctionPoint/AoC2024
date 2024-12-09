@@ -27,3 +27,8 @@ Because that is wat SmallJS is buit on :-).
 Brute force searching XMAS in all directions from all points of the grid.
 The Point type of Smalltalk keeps things concise.
 
+### Day 7: Bridge Repair
+
+Encoded the operators '+' and '*' as 0 and 1 bits in an integer operatorBits,
+so you can enumerate all operator combinations by just increasing this integer value.
+

@@ -28,6 +28,19 @@
 			"cwd": "${workspaceFolder}",
 			"envFile": "${workspaceFolder}/.env",
 			"preLaunchTask": "Compile Smalltalk"
+		},
+		{
+			"name": "Launch Last",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/out/main.js",
+			"args": [ "-last" ],
+			"cwd": "${workspaceFolder}",
+			"envFile": "${workspaceFolder}/.env",
+			"preLaunchTask": "Compile Smalltalk"
 		}
 	]
 }

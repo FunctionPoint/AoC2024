@@ -3,12 +3,12 @@ CLASS AocApp EXTENDS Object MODULE AocApp CLASSVARS '' VARS 'days'
 start
 	self initializeDays.
 
-	"Uncomment this to run only a specific day:"
-	"^ self runDay: days last."
-
 	self testMode
 		ifTrue: [ TestDays. Test all ]
-		ifFalse: [ self runAll ].
+		ifFalse: [
+			self lastMode
+				ifTrue: [ ^ self runDay: days last. ]
+				ifFalse: [ self runAll ] ].
 !
 initializeDays
 	days := Array new.
@@ -18,9 +18,12 @@ initializeDays
 testMode
 	^ ( Process argv length = 3 ) & ( Process argv last = '-test').
 !
+lastMode
+	^ ( Process argv length = 3 ) & ( Process argv last = '-last').
+!
 dayClasses
 	"Array of classes of day solutions implemented."
-	^ #( Day1 Day2 Day3 Day4 Day5 Day6 ).
+	^ #( Day1 Day2 Day3 Day4 Day5 Day6 Day7 ).
 !
 runAll
 	days do: [ :day |
