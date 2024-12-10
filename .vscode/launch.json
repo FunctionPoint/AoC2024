@@ -17,19 +17,6 @@
 			"preLaunchTask": "Compile Smalltalk"
 		},
 		{
-			"name": "Launch Test",
-			"type": "node",
-			"request": "launch",
-			"skipFiles": [
-				"<node_internals>/**"
-			],
-			"program": "${workspaceFolder}/out/main.js",
-			"args": [ "-test" ],
-			"cwd": "${workspaceFolder}",
-			"envFile": "${workspaceFolder}/.env",
-			"preLaunchTask": "Compile Smalltalk"
-		},
-		{
 			"name": "Launch Last",
 			"type": "node",
 			"request": "launch",
@@ -38,6 +25,19 @@
 			],
 			"program": "${workspaceFolder}/out/main.js",
 			"args": [ "-last" ],
+			"cwd": "${workspaceFolder}",
+			"envFile": "${workspaceFolder}/.env",
+			"preLaunchTask": "Compile Smalltalk"
+		},
+		{
+			"name": "Launch Test",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/out/main.js",
+			"args": [ "-test" ],
 			"cwd": "${workspaceFolder}",
 			"envFile": "${workspaceFolder}/.env",
 			"preLaunchTask": "Compile Smalltalk"

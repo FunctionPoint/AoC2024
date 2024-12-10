@@ -4,7 +4,10 @@ start
 	self initializeDays.
 
 	self testMode
-		ifTrue: [ TestDays. Test all ]
+		ifTrue: [
+				self log: 'Running all unit tests...'.
+				TestDays.
+				Test all ]
 		ifFalse: [
 			self lastMode
 				ifTrue: [ ^ self runDay: days last. ]
@@ -23,7 +26,7 @@ lastMode
 !
 dayClasses
 	"Array of classes of day solutions implemented."
-	^ #( Day1 Day2 Day3 Day4 Day5 Day6 Day7 ).
+	^ #( Day1 Day2 Day3 Day4 Day5 Day6 Day7 Day8 ).
 !
 runAll
 	days do: [ :day |

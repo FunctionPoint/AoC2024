@@ -9,6 +9,10 @@ Or run the bash script: start.sh
 
 ## Problems
 
+Note:
+I've only implemented part 1 of every day problem for now,
+as I can only spare an hour so each day.
+
 ### Day 1: Historian Hysteria
 
 Simple parallel traversal of 2 lists, sorted first.
@@ -41,3 +45,9 @@ The 'game state management' of this problem is a natural fit for OOP imo.
 Encoded the operators '+' and '*' as 0 and 1 bits in an integer operatorBits,
 so you can enumerate all operator combinations by just increasing this integer value.
 
+### Day 8: Resonant Collinearity
+
+Per antenna type, the diffent locations are first stored in a key-value map.
+Of this map all location pairs taken to calculate relative anti-node locations.
+Antinode locations are stored in a list, preventing duplicates.
+The size of the list is the solution.
