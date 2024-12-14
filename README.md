@@ -80,3 +80,11 @@ It then checks if the map point has the desired height.
 If height is 9 then we've found a solution, add this endpoint uniquely.
 Otherwise recursively call the function with the neighboring points,
 (up, down, left or right), and the next desired height (+1).
+
+### Day 11: Plutonian Pebbles
+
+Very straightforward implementation of the blink rules,
+making a new stones list for every operation.
+
+
+
