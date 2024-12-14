@@ -36,14 +36,20 @@ testDay4
 	self assert: [ day4 solution = 2483 ].
 !
 testDay5
-	self assert: [ Day5 new solveTimed solution = 6949 ].
+	self assert: [ Day5 new solve solution = 6949 ].
 !
 testDay6
-	self assert: [ Day6 new solveTimed solution = 5131 ].
+	self assert: [ Day6 new solve solution = 5131 ].
 !
 testDay7
-	self assert: [ Day7 new solveTimed solution = 975671981569 ].
+	self assert: [ Day7 new solve solution = 975671981569 ].
 !
 testDay8
-	self assert: [ Day8 new solveTimed solution = 318 ].
+	self assert: [ Day8 new solve solution = 318 ].
+!
+testDay9
+	self assert: [ Day9 new solve solution = 6378826667552 ].
+!
+testDay10
+	self assert: [ Day10 new solve solution = 548 ].
 !
