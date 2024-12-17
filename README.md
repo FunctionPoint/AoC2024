@@ -105,3 +105,15 @@ its area (number of plots), and the number of perimeter fences needed.
 Lastly calculation of the cost is done by iterating over all regions,
 multiplying area and perimeter.
 
+### Day 13: Claw Contraption
+
+This one is solved mostly by math.
+Buttons A and B have known point (vertex) increments per push
+and must each pushed a (separate) number or times to reach the prize point.
+Splitting fo x and y this can be seen as 2 equations with 2 unknowns.
+These equations can be directly rewritten to solve for pushes of A and B.
+If there is no (integer) solution, result will be a fraction.
+
+Then just iterate over the push solutions that are not fractions
+and calcalculate total of tokens using the the weight factors for A (=3) and B (=1).
+

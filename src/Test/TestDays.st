@@ -59,3 +59,6 @@ testDay11
 testDay12
 	self assert: [ Day12 new solve solution = 1415378 ].
 !
+testDay13
+	self assert: [ Day13 new solve solution = 28262 ].
+!
