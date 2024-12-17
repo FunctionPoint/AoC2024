@@ -5,7 +5,7 @@ The solutions are implemented in SmallJS,
 a Smalltalk dialect that compiles to JavaScript.
 See: [http://small-js.org](http://small-js.org).
 The resulting application runs in Node.js.
-(Running in a browser is not usefull for these types of problems.)
+(Running in a browser is not useful for these types of problems.)
 
 I've only implemented part 1 of every day problem for now,
 as I can only spare an hour so each day.
@@ -36,7 +36,7 @@ The 'safe' check per report is implemented with a few if statements.
 ### Day 3: Mull It Over
 
 Made a full parser, iso using regular expressions to simplify the task.
-Because that is wat SmallJS is buit on :-).
+Because that is wat SmallJS is built on :-).
 
 ### Day 4: Ceres search
 
@@ -59,7 +59,7 @@ so you can enumerate all operator combinations by just increasing this integer v
 
 ### Day 8: Resonant Collinearity
 
-Per antenna type, the diffent locations are first stored in a key-value map.
+Per antenna type, the different locations are first stored in a key-value map.
 Of this map all location pairs are taken to calculate their antinode locations.
 Antinode locations are stored in a list, preventing duplicates.
 The size of the list is the solution.
@@ -86,5 +86,22 @@ Otherwise recursively call the function with the neighboring points,
 Very straightforward implementation of the blink rules,
 making a new stones list for every operation.
 
+### Day 12: Garden Groups
 
+Felt the need to do proper OO with additional problem classes besides the solution class:
+Garden, GardenPlot, GardenRegion.
+
+First the garden is loaded from the data putting a GardenPlot object at every coordinate
+that saves the plan type for that plot but also has a variable remembering if the plot has been
+'visited' already (was already added to a region).
+
+Then the garden plots are iterated over and for each plot a region with the same plant type
+is found by trying all neighbors. Also the number perimeter fences needed is checked per plot,
+looking at its neighbors.
+
+Every plot is added to GardenRegion object that remembers its pant type,
+its area (number of plots), and the number of perimeter fences needed.
+
+Lastly calculation of the cost is done by iterating over all regions,
+multiplying area and perimeter.
 
