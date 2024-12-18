@@ -117,3 +117,9 @@ If there is no (integer) solution, result will be a fraction.
 Then just iterate over the push solutions that are not fractions
 and calcalculate total of tokens using the the weight factors for A (=3) and B (=1).
 
+### Day 14: Restroom Redoubt
+
+Quite a strightforward solition with robot beheviour encapsulated in a Robot class.
+Considered a Grid class too but it did not seem worth it.
+OO is a good fit for this stateful problem.
+
