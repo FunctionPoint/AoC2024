@@ -119,7 +119,15 @@ and calcalculate total of tokens using the the weight factors for A (=3) and B (
 
 ### Day 14: Restroom Redoubt
 
-Quite a strightforward solition with robot beheviour encapsulated in a Robot class.
-Considered a Grid class too but it did not seem worth it.
+Quite a straightforward solution with robot behavior encapsulated in a Robot class.
+Considered a Grid class too but it did not seem worth it,
+because the robots manage most of the state, the grid only maintains its size.
 OO is a good fit for this stateful problem.
+
+### Day 15: Warehouse Woes
+
+Straightforward building blocks for solution: Warehouse and RobotMoves.
+A Warehouse object remembers the positions of the robot and boxes after moves.
+The crux of the solution is when the robot tries to move to the location of a box,
+*try* to move that box in the same direction, recursively.
 
