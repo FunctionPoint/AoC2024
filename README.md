@@ -131,3 +131,15 @@ A Warehouse object remembers the positions of the robot and boxes after moves.
 The crux of the solution is when the robot tries to move to the location of a box,
 *try* to move that box in the same direction, recursively.
 
+### Day 16: Reindeer Maze
+
+I first implemented this using full recursive traversal of the maze.
+For the examples, this was fine, but for the full input is was too slow.
+I found out that Dijkstra's minimizing algorithm should be used.
+I did not want to change my code too much anymore so the solution is a hybrid
+of Dijkstra's Algorithm remembering the minimum score at every maze node,
+discarding paths with a higher score. But still keeping the elegant recursion,
+in stead of maintaining a smaller (faster) set of active 'frontier' nodes.
+So a unique solution, that takes about 55 seconds to run on my older PC. :-)
+The committed code run example 2, to limit run and test times.
+

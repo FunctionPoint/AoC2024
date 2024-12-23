@@ -22,4 +22,5 @@ test
 	self assert: [ Day13 new solve solution = 28262 ].
 	self assert: [ Day14 new solve solution = 231019008 ].
 	self assert: [ Day15 new solve solution = 1559280 ].
+	self assert: [ Day16 new solve solution = 11048 ].
 !

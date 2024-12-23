@@ -1,7 +1,7 @@
 CLASS Day15 EXTENDS DayAbstract MODULE AocApp CLASSVARS ''
 	VARS 'warehouse moves'
 
-"Winebsite: https://adventofcode.com/2024/day/15"
+"AoC page: https://adventofcode.com/2024/day/15"
 
 title
 	^ 'Day 15: Warehouse Woes'.
@@ -11,7 +11,7 @@ solve
 	moves := RobotMoves input.
 
 	moves do: [ :move |
-		warehouse moveRobot: move	].
+		warehouse moveRobot: move ].
 
 	solution := warehouse sumBoxCoordinates.
 !
